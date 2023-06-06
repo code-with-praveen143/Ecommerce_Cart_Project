@@ -10,6 +10,8 @@ def home(request):
 	
 def createdesign(request):
 	return render(request,'store/createdesign.html')
+def aboutus(request):
+	return render(request,'store/aboutus.html')
 
 def store(request):
 	data = cartData(request)

@@ -9,6 +9,5 @@ urlpatterns = [
     path('process_order/', views.processOrder, name="process_order"),
     path('home/', views.home, name="home"),
     path('createdesign',views.createdesign,name="createdesign"),
-
-
+    path('aboutus',views.aboutus,name="aboutus"),
 ]

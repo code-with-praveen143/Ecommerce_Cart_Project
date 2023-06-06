@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/dhan.css' %}"/>
+    <script src="https://kit.fontawesome.com/e5e83f9d84.js" crossorigin="anonymous"></script>
+    <script src = "{% static 'js/dhan.js' %}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Avinash</a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a  class="nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-white" href="{% url 'createdesign' %}">Create Design</a>
+                <a class="nav-link text-white" href="{% url 'aboutus' %}">About Us</a>
+                <a class="nav-link text-white" href="#">Contact</a>
+                <a class="nav-link text-white" href="{% url 'store' %}">Cart</a>
+            </div>
+        </div>
+    </nav>
+    <div class="shadow m-4 abc">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Our Services</h1>
+                    <p style="font-size: 27px; color: #1f2933; font-weight: 450;">Most online stores lower prices. online shopping makes price camparison simpler and quicker. it is very convinient to shop from from where you are located. it saves you the cost of drivivg to stores, as well as parking fees.</p>
+                </div>
+                <div class="col-12 col-md-4 shadow-lg mb-3">
+                    <div class="first text-center pb-4">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-services-delivery-img.png" class="imagge" />
+                        <h1 style="font-size: 35px;">
+                            Fast and Free Deliver
+                        </h1>
+                        <p style="font-size: 25px; color: #7b8794;">Fast , Free and convenient delivery choices on millions of items</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 shadow-lg mb-3">
+                    <div class="first text-center pb-4">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-services-money-back-img.png" class="imagge" />
+                        <h1 style="font-size: 35px;">
+                            100% Money back guarantee
+                        </h1>
+                        <p style="font-size: 25px; color: #7b8794;">This is probably the most popular guarantee in the world</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 shadow-lg mb-3">
+                    <div class="first text-center pb-4">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-services-24-by-7-support-img.png" class="imagge" />
+                        <h1 style="font-size: 35px;">
+                            Online Support 24/7
+                        </h1>
+                        <p style="font-size: 25px; color: #7b8794;">Our online support will provide you with many useful functions , valuable infpormation , tips</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-container p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div style="text-align: center;">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-website-logo-img.png" class="imaage" />
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="icons-background p-3">
+                                <i class="fa-brands fa-google icon"></i>
+                            </div>
+                            <div class="icons-background p-3">
+                                <i class="fa-brands fa-twitter icon"></i>
+                            </div>
+                            <div class="icons-background p-3">
+                                <i class="fa-brands fa-instagram icon"></i>
+                            </div>
+                            <div class="icons-background p-3">
+                                <i class="fa-brands fa-linkedin icon"></i>
+                            </div>
+
+
+                        </div>
+                        <h1 style="font-size: 15px; color: #5a7184;">37, Ayur Vigyan Nagar, Neew Delhi, india</h1>
+
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mt-2">
+                    <h1 class="para">Get to know us</h1>
+                    <p class="para1">About us</p>
+                    <p class="para1">Carrer</p>
+                    <p class="para1">Press Releases</p>
+                    <p class="para1">Gift a smile</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mt-2">
+                    <h1 class="para">Get to know us</h1>
+                    <p class="para1">About us</p>
+                    <p class="para1">Carrer</p>
+                    <p class="para1">Press Releases</p>
+                    <p class="para1">Gift a smile</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 col-md-6 mt-2">
+                    <h1 class="para">Let Us Help You</h1>
+                    <p class="para1">100% Purchase</p>
+                    <p class="para1">Protection</p>
+                    <p class="para1">your assisstant</p>
+                    <p class="para1">Help</p>
+                </div>
+                <hr class="graze" />
+                <div class="d-flex flex-row text-center">
+
+                    <p classs="para" style="color: #5a7184;"><i class="fa-regular fa-copyright"></i> 2022 by avinash, created with bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
