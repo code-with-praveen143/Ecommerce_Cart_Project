@@ -26,8 +26,8 @@
             <div class="navbar-nav ml-auto">
                 <a  class="nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-link text-white" href="{% url 'createdesign' %}">Create Design</a>
-                <!-- <a class="nav-link text-white" href="aboutus.html">About Us</a>
-                <a class="nav-link text-white" href="#">Contact</a> -->
+                <a class="nav-link text-white" href="{% url 'aboutus' %}">About Us</a> 
+                <a class="nav-link text-white" href="#">Contact</a> 
                 <a class="nav-link text-white" href="{% url 'cart' %}">Cart</a>
             </div>
         </div>
@@ -89,7 +89,7 @@
           font-weight: bold;
           text-align: center;
         }
-      </style>
+      </style> 
     </head>
     <body>
       <div class="abc">
